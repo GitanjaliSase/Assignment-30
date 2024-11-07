@@ -64,7 +64,7 @@ b{
        <img src="./images/2.jpeg" class="p_img" >
        <p>Vamika vx Code Set </p>
        <p><b>Price:</b> 1199</p>
-       <div class="quantity-btn-container">
+    <div class="quantity-btn-container">
         <button type="button" onclick="decrement()">
             -
         </button>&nbsp;
@@ -128,5 +128,12 @@ b{
           Add to card
        </button>
 </div>
+<script>
+    const q=document.getElementById("quantity");
+    function increment(){
+        const quantity=parseInt(q.innerText);
+        q.innerText=quantity+1;
+    }
+</script>
 </body>
 </html>
