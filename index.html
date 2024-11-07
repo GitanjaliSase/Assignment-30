@@ -60,79 +60,19 @@ b{
         Add to card
      </button>
 </div>
-<div class="p-card" >
-       <img src="./images/2.jpeg" class="p_img" >
-       <p>Vamika vx Code Set </p>
-       <p><b>Price:</b> 1199</p>
-    <div class="quantity-btn-container">
-        <button type="button" onclick="decrement()">
-            -
-        </button>&nbsp;
-        <span id="quantity">1</span>&nbsp;
-        <button type="button" onclick="increment()">
-            +
-        </button>
-    </div>
-       <button class="add-to-card">
-          Add to card
-       </button>
-</div>
-<div class="p-card" >
-       <img src="./images/3.jpeg" class="p_img" >
-       <p>Rayon Code Set </p>
-       <p><b>Price:</b> 1399</p>
-       <div class="quantity-btn-container">
-        <button type="button" onclick="decrement()">
-            -
-        </button>&nbsp;
-        <span id="quantity">1</span>&nbsp;
-        <button type="button" onclick="increment()">
-            +
-        </button>
-    </div>
-       <button class="add-to-card">
-          Add to card
-       </button>
-</div>
-<div class="p-card" >
-           <img src="./images/4.jpeg" class="p_img" >
-           <p>Coclate Code Set </p>
-           <p><b>Price:</b> 1500</p>
-           <div class="quantity-btn-container">
-            <button type="button" onclick="decrement()">
-                -
-            </button>&nbsp;
-            <span id="quantity">1</span>&nbsp;
-            <button type="button" onclick="increment()">
-                +
-            </button>
-        </div>
-           <button class="add-to-card">
-              Add to card
-           </button>
-</div>
-<div class="p-card" >
-       <img src="./images/5.jpeg" class="p_img" >
-       <p>Vamika vx Code Set </p>
-       <p><b>Price:</b> 999</p>
-       <div class="quantity-btn-container">
-        <button type="button" onclick="decrement()">
-            -
-        </button>&nbsp;
-        <span id="quantity">1</span>&nbsp;
-        <button type="button" onclick="increment()">
-            +
-        </button>
-    </div>
-       <button class="add-to-card">
-          Add to card
-       </button>
-</div>
+
 <script>
-    const q=document.getElementById("quantity");
     function increment(){
+        const q=document.getElementById("quantity");
         const quantity=parseInt(q.innerText);
         q.innerText=quantity+1;
+    }
+    function decrement(){
+        const q=document.getElementById("quantity");
+        const quantity=parseInt(q.innerText);
+        if (quantity >=1){
+        q.innerText=quantity-1;
+        }
     }
 </script>
 </body>
